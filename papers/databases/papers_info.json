@@ -1,0 +1,56 @@
+{
+  "2011.14860v6": {
+    "title": "Infinite Probabilistic Databases",
+    "authors": [
+      "Martin Grohe",
+      "Peter Lindner"
+    ],
+    "summary": "Probabilistic databases (PDBs) model uncertainty in data in a quantitative way. In the established formal framework, probabilistic (relational) databases are finite probability spaces over relational database instances. This finiteness can clash with intuitive query behavior (Ceylan et al., KR 2016), and with application scenarios that are better modeled by continuous probability distributions (Dalvi et al., CACM 2009).\n  We formally introduced infinite PDBs in (Grohe and Lindner, PODS 2019) with a primary focus on countably infinite spaces. However, an extension beyond countable probability spaces raises nontrivial foundational issues concerned with the measurability of events and queries and ultimately with the question whether queries have a well-defined semantics.\n  We argue that finite point processes are an appropriate model from probability theory for dealing with general probabilistic databases. This allows us to construct suitable (uncountable) probability spaces of database instances in a systematic way. Our main technical results are measurability statements for relational algebra queries as well as aggregate queries and Datalog queries.",
+    "pdf_url": "https://arxiv.org/pdf/2011.14860v6",
+    "published": "2020-11-30"
+  },
+  "2502.12908v2": {
+    "title": "Graph Neural Networks for Databases: A Survey",
+    "authors": [
+      "Ziming Li",
+      "Youhuan Li",
+      "Yuyu Luo",
+      "Guoliang Li",
+      "Chuxu Zhang"
+    ],
+    "summary": "Graph neural networks (GNNs) are powerful deep learning models for graph-structured data, demonstrating remarkable success across diverse domains. Recently, the database (DB) community has increasingly recognized the potentiality of GNNs, prompting a surge of researches focusing on improving database systems through GNN-based approaches. However, despite notable advances, There is a lack of a comprehensive review and understanding of how GNNs could improve DB systems. Therefore, this survey aims to bridge this gap by providing a structured and in-depth overview of GNNs for DB systems. Specifically, we propose a new taxonomy that classifies existing methods into two key categories: (1) Relational Databases, which includes tasks like performance prediction, query optimization, and text-to-SQL, and (2) Graph Databases, addressing challenges like efficient graph query processing and graph similarity computation. We systematically review key methods in each category, highlighting their contributions and practical implications. Finally, we suggest promising avenues for integrating GNNs into Database systems.",
+    "pdf_url": "https://arxiv.org/pdf/2502.12908v2",
+    "published": "2025-02-18"
+  },
+  "1303.3233v1": {
+    "title": "Consistency Checking and Querying in Probabilistic Databases under Integrity Constraints",
+    "authors": [
+      "Sergio Flesca",
+      "Filippo Furfaro",
+      "Francesco Parisi"
+    ],
+    "summary": "We address the issue of incorporating a particular yet expressive form of integrity constraints (namely, denial constraints) into probabilistic databases. To this aim, we move away from the common way of giving semantics to probabilistic databases, which relies on considering a unique interpretation of the data, and address two fundamental problems: consistency checking and query evaluation. The former consists in verifying whether there is an interpretation which conforms to both the marginal probabilities of the tuples and the integrity constraints. The latter is the problem of answering queries under a \"cautious\" paradigm, taking into account all interpretations of the data in accordance with the constraints. In this setting, we investigate the complexity of the above-mentioned problems, and identify several tractable cases of practical relevance.",
+    "pdf_url": "https://arxiv.org/pdf/1303.3233v1",
+    "published": "2013-03-13"
+  },
+  "2302.04106v1": {
+    "title": "Detecting Data Type Inconsistencies in a Property Graph Database",
+    "authors": [
+      "Joshua R. Porter",
+      "Michael N. Young",
+      "Aleks Y. M. Ontman"
+    ],
+    "summary": "Some property graph databases do not have a fixed schema, which can result in data type inconsistencies for properties on nodes and relationships, especially when importing data into a running database. Here we present a tool which can rapidly produce a detailed report on every property in the graph. When executed on a large knowledge graph, it allowed us to debug a complex ETL process and enforce 100% data type consistency.",
+    "pdf_url": "https://arxiv.org/pdf/2302.04106v1",
+    "published": "2023-02-08"
+  },
+  "1712.01001v7": {
+    "title": "Specifying and Computing Causes for Query Answers in Databases via Database Repairs and Repair Programs",
+    "authors": [
+      "Leopoldo Bertossi"
+    ],
+    "summary": "A correspondence between database tuples as causes for query answers in databases and tuple-based repairs of inconsistent databases with respect to denial constraints has already been established. In this work, answer-set programs that specify repairs of databases are used as a basis for solving computational and reasoning problems about causes. Here, causes are also introduced at the attribute level by appealing to a both null-based and attribute-based repair semantics. The corresponding repair programs are presented, and they are used as a basis for computation and reasoning about attribute-level causes. They are extended to deal with the case of causality under integrity constraints.",
+    "pdf_url": "https://arxiv.org/pdf/1712.01001v7",
+    "published": "2017-12-04"
+  }
+}

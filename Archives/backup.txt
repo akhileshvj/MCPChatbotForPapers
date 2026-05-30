@@ -1,0 +1,181 @@
+import os
+import arxiv
+import json
+import warnings
+from typing import List
+from dotenv import load_dotenv
+
+from google import genai
+from google.genai import types
+from tools import tools
+from mcp.server.fastmcp import FastMCP 
+
+# Silence the mixed-content warning since we are handling parts manually
+warnings.filterwarnings("ignore", message=".*non-text parts in the response.*")
+
+mcp = FastMCP("research")
+
+PAPER_DIR = "papers"
+
+load_dotenv() 
+client = genai.Client()
+
+@mcp.tool()
+def search_papers(topic: str, max_results: int = 5) -> dict:
+    """Search for papers on arXiv based on a topic and store their information."""
+    arxiv_client = arxiv.Client()
+
+    search = arxiv.Search(
+        query=topic,
+        max_results=max_results,
+        sort_by=arxiv.SortCriterion.Relevance
+    )
+
+    papers = arxiv_client.results(search)
+    
+    path = os.path.join(PAPER_DIR, topic.lower().replace(" ", "_"))
+    os.makedirs(path, exist_ok=True)
+    file_path = os.path.join(path, "papers_info.json")
+
+    try:
+        with open(file_path, "r") as json_file:
+            papers_info = json.load(json_file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        papers_info = {}
+
+    current_search_results = {}
+    for paper in papers:
+        short_id = paper.get_short_id()
+        paper_info = {
+            'title': paper.title,
+            'authors': [author.name for author in paper.authors],
+            'summary': paper.summary,
+            'pdf_url': paper.pdf_url,
+            'published': str(paper.published.date())
+        }
+        papers_info[short_id] = paper_info
+        current_search_results[short_id] = paper_info
+    
+    with open(file_path, "w") as json_file:
+        json.dump(papers_info, json_file, indent=2)
+    
+    print(f"\n[Tool Activity] Results are saved in: {file_path}")
+    return current_search_results
+
+@mcp.tool()
+def extract_info(paper_id: str) -> str:
+    """Search for information about a specific paper across all topic directories."""
+    if not os.path.exists(PAPER_DIR):
+        return f"There's no saved information related to paper {paper_id}."
+
+    for item in os.listdir(PAPER_DIR):
+        item_path = os.path.join(PAPER_DIR, item)
+        if os.path.isdir(item_path):
+            file_path = os.path.join(item_path, "papers_info.json")
+            if os.path.isfile(file_path):
+                try:
+                    with open(file_path, "r") as json_file:
+                        papers_info = json.load(json_file)
+                        if paper_id in papers_info:
+                            return json.dumps(papers_info[paper_id], indent=2)
+                except (FileNotFoundError, json.JSONDecodeError) as e:
+                    print(f"Error reading {file_path}: {str(e)}")
+                    continue
+    
+    return f"There's no saved information related to paper {paper_id}."
+
+mapping_tool_function = {
+    "search_papers": search_papers,
+    "extract_info": extract_info
+}
+
+def execute_tool(tool_name, tool_args):
+    result = mapping_tool_function[tool_name](**tool_args)
+    if result is None:
+        return "The operation completed but didn't return any results."
+    if isinstance(result, (dict, list)):
+        return json.dumps(result, indent=2)
+    return str(result)
+
+# Initialize a persistent context list to hold the chat history manually
+# We use standard client.models.generate_content for precision control over the turns
+chat_history = []
+
+def process_query(query: str):
+    global chat_history
+    
+    # 1. Append the new user text message to history
+    chat_history.append(
+        types.Content(role="user", parts=[types.Part.from_text(text=query)])
+    )
+    
+    loop_active = True
+    while loop_active:
+        # Send the full conversation context stack to Gemini
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=chat_history,
+            config=types.GenerateContentConfig(
+                tools=tools, # Uses your exact tools.py configuration schemas
+                temperature=0.3
+            )
+        )
+        
+        # Save Gemini's response structure into the tracking history
+        if response.candidates and response.candidates[0].content:
+            model_content = response.candidates[0].content
+            chat_history.append(model_content)
+        
+        # 2. Check if Gemini wants to call a tool
+        if response.function_calls:
+            tool_results_parts = []
+            
+            for call in response.function_calls:
+                print(f"Calling tool {call.name} with args {call.args}")
+                
+                # Run your local execution block
+                result_data = execute_tool(call.name, call.args)
+                
+                # Format the response exactly how Gemini expects tool feedback
+                tool_results_parts.append(
+                    types.Part.from_function_response(
+                        name=call.name,
+                        response={"result": result_data}
+                    )
+                )
+            
+            # Append the tool executions back into history as a 'user' turn response
+            chat_history.append(
+                types.Content(role="user", parts=tool_results_parts)
+            )
+            # Loop stays active to send the tool output back to the model
+            continue
+            
+        else:
+            # No tool execution requested; model returned final text response
+            if response.text:
+                print(response.text)
+            loop_active = False
+
+def chat_loop():
+    print("Gemini Core Chatbot Active. Type your queries or 'quit' to exit.")
+    while True:
+        try:
+            query = input("\nQuery: ").strip()
+            if not query:
+                continue
+            if query.lower() == 'quit':
+                break
+    
+            process_query(query)
+            print("\n")
+        except Exception as e:
+            print(f"\nError: {str(e)}")
+
+def main():
+    file_path = os.getcwd()
+    print(f"Current Directory: {file_path}")
+    chat_loop()
+
+if __name__ == "__main__":
+    main()

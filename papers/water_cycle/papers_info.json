@@ -1,0 +1,64 @@
+{
+  "1804.02436v1": {
+    "title": "Water Bridging Dynamics of Polymerase Chain Reaction in the Gauge Theory Paradigm of Quantum Fields",
+    "authors": [
+      "Luc Montagnier",
+      "Jamal A\u00efssa",
+      "Antonio Capolupo",
+      "Travis J. A. Craddock",
+      "Philip Kurian",
+      "Claude Lavallee",
+      "Albino Polcari",
+      "Paola Romano",
+      "Alberto Tedeschi",
+      "Giuseppe Vitiello"
+    ],
+    "summary": "We discuss the role of water bridging the DNA-enzyme interaction by resorting to recent results showing that London dispersion forces between delocalized electrons of base pairs of DNA are responsible for the formation of dipole modes that can be recognized by \\textit{Taq} polymerase. We describe the dynamic origin of the high efficiency and precise targeting of \\textit{Taq} activity in PCR. The spatiotemporal distribution of interaction couplings, frequencies, amplitudes, and phase modulations comprise a pattern of fields which constitutes the electromagnetic image of DNA in the surrounding water, which is what the polymerase enzyme actually recognizes in the DNA water environment. The experimental realization of PCR amplification, achieved through replacement of the DNA template by the treatment of pure water with electromagnetic signals recorded from viral and bacterial DNA solutions, is found consistent with the gauge theory paradigm of quantum fields.",
+    "pdf_url": "https://arxiv.org/pdf/1804.02436v1",
+    "published": "2018-03-29"
+  },
+  "2311.10579v1": {
+    "title": "Graph Neural Networks for Pressure Estimation in Water Distribution Systems",
+    "authors": [
+      "Huy Truong",
+      "Andr\u00e9s Tello",
+      "Alexander Lazovik",
+      "Victoria Degeler"
+    ],
+    "summary": "Pressure and flow estimation in Water Distribution Networks (WDN) allows water management companies to optimize their control operations. For many years, mathematical simulation tools have been the most common approach to reconstructing an estimate of the WDN hydraulics. However, pure physics-based simulations involve several challenges, e.g. partially observable data, high uncertainty, and extensive manual configuration. Thus, data-driven approaches have gained traction to overcome such limitations. In this work, we combine physics-based modeling and Graph Neural Networks (GNN), a data-driven approach, to address the pressure estimation problem. First, we propose a new data generation method using a mathematical simulation but not considering temporal patterns and including some control parameters that remain untouched in previous works; this contributes to a more diverse training data. Second, our training strategy relies on random sensor placement making our GNN-based estimation model robust to unexpected sensor location changes. Third, a realistic evaluation protocol considers real temporal patterns and additionally injects the uncertainties intrinsic to real-world scenarios. Finally, a multi-graph pre-training strategy allows the model to be reused for pressure estimation in unseen target WDNs. Our GNN-based model estimates the pressure of a large-scale WDN in The Netherlands with a MAE of 1.94mH$_2$O and a MAPE of 7%, surpassing the performance of previous studies. Likewise, it outperformed previous approaches on other WDN benchmarks, showing a reduction of absolute error up to approximately 52% in the best cases.",
+    "pdf_url": "https://arxiv.org/pdf/2311.10579v1",
+    "published": "2023-11-17"
+  },
+  "1211.7294v1": {
+    "title": "Copper passivation procedure for water-filled copper cells for applications in metrology",
+    "authors": [
+      "Bruno Bu\u00e9e",
+      "Alexandre Verg\u00e9",
+      "Vladimir Vidal",
+      "Eric Georgin",
+      "Fernando Sparasci"
+    ],
+    "summary": "In the framework of the European research project MeteoMet, the LNE-CNAM and the LNE-CETIAT are developing novel copper cells for the determination of the water vapour pressure equation and the measurement of the triple point of water temperature at the highest degree of accuracy.\n  The Water Vapour Pressure Equation (WVPE) is the basic formula for the calculation of the vapour pressure and other humidity related quantities. Improvement in the uncertainty of the water vapour formulation in the temperature range between -80^{\\cdot}C (and possibly down to -90^{\\cdot}C) and +100^{\\cdot}C is needed for the improvement of primary standards in the field of hygrometry. The Triple Point of Water (TPW, temperature 273,16 K) plays a key role in thermometry, because of its threefold function. On one side, it defines the temperature unit, the kelvin. On the other side, it is the reference point in Standard Platinum Resistance Thermometer (SPRT) calibrations, according to the International Temperature Scale of 1990 (ITS-90). Finally, it is the connection point between the current definition of the kelvin and the future one, based on the Boltzmann constant.\n  Copper cells for WVPE and TPW allow highly accurate temperature control, fast thermal response time and excellent thermal uniformity, because of the elevated copper thermal conductivity. Thus, they can be an outstanding tool for reducing measurement uncertainty. Nevertheless, accurate filling techniques and procedures are necessary, to minimize water contamination and get stable, accurate and reproducible results.\n  This report describes the filling system and the copper passivation and cleaning procedure, as well as the method for filling copper cells with high-purity water.",
+    "pdf_url": "https://arxiv.org/pdf/1211.7294v1",
+    "published": "2012-11-30"
+  },
+  "1807.03460v1": {
+    "title": "Flexible Bond and Angle, FBA/epsilon model of water",
+    "authors": [
+      "Ra\u00fal Fuentes-Azcatl",
+      "Marcia C. Barbosa"
+    ],
+    "summary": "We propose a new flexible force field for water. The model in addition to the Lennard-Jones and electrostatic parameters, includes the flexibility of the OH bonds and angles. The parameters are selected to give the experimental values of the density and dielectric constant of water at at 1 bar at 240K and the dipole moment of minimum density. The FBA/epsilon reproduces the experimental values of structural, thermodynamic and the phase behavior of water in a wide range of temperatures with better accuracy than atomistic and other flexible models. We expect that this new approach would be suitable for studying water solutions.",
+    "pdf_url": "https://arxiv.org/pdf/1807.03460v1",
+    "published": "2018-07-10"
+  },
+  "cs/0604020v4": {
+    "title": "Approximation Algorithms for Restricted Cycle Covers Based on Cycle Decompositions",
+    "authors": [
+      "Bodo Manthey"
+    ],
+    "summary": "  A cycle cover of a graph is a set of cycles such that every vertex is part of exactly one cycle. An L-cycle cover is a cycle cover in which the length of every cycle is in the set L. The weight of a cycle cover of an edge-weighted graph is the sum of the weights of its edges.\n  We come close to settling the complexity and approximability of computing L-cycle covers. On the one hand, we show that for almost all L, computing L-cycle covers of maximum weight in directed and undirected graphs is APX-hard and NP-hard. Most of our hardness results hold even if the edge weights are restricted to zero and one.\n  On the other hand, we show that the problem of computing L-cycle covers of maximum weight can be approximated within a factor of 2 for undirected graphs and within a factor of 8/3 in the case of directed graphs. This holds for arbitrary sets L.",
+    "pdf_url": "https://arxiv.org/pdf/cs/0604020v4",
+    "published": "2006-04-06"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "2510.08129v1": {
+    "title": "Adaptive Quantum Homeopathy",
+    "authors": [
+      "Lennart Bittel",
+      "Lorenzo Leone"
+    ],
+    "summary": "Randomness is a fundamental resource in quantum information, with crucial applications in cryptography, algorithms, and error correction. A central challenge is to construct unitary $k$-designs that closely approximate Haar-random unitaries while minimizing the costly use of non-Clifford operations. In this work, we present a protocol, named Quantum Homeopathy, able to generate unitary $k$-designs on $n$ qubits, secure against any adversarial quantum measurement, with a system-size-independent number of non-Clifford gates. Inspired by the principle of homeopathy, our method applies a $k$-design only to a subsystem of size $\u0398(k)$, independent of $n$. This \"seed\" design is then \"diluted\" across the entire $n$-qubit system by sandwiching it between two random Clifford operators. The resulting ensemble forms an $\\varepsilon$-approximate unitary $k$-design on $n$ qubits. We prove that this construction achieves full quantum security against adaptive adversaries using only $\\tilde{O}(k^2 \\log\\varepsilon^{-1})$ non-Clifford gates. If one requires security only against polynomial-time adaptive adversaries, the non-Clifford cost decreases to $\\tilde{O}(k + \\log^{1+c} \\varepsilon^{-1})$. This is optimal, since we show that at least $\u03a9(k)$ non-Clifford gates are required in this setting. Compared to existing approaches, our method significantly reduces non-Clifford overhead while strengthening security guarantees to adaptive security as well as removing artificial assumptions between $n$ and $k$. These results make high-order unitary designs practically attainable in near-term fault-tolerant quantum architectures.",
+    "pdf_url": "https://arxiv.org/pdf/2510.08129v1",
+    "published": "2025-10-09"
+  },
+  "2110.10352v2": {
+    "title": "Axion Homeopathy: Screening Dilaton Interactions",
+    "authors": [
+      "C. P. Burgess",
+      "F. Quevedo"
+    ],
+    "summary": "Cosmologically active Brans-Dicke (or dilaton) scalar fields are generically ruled out by solar system tests of gravity unless their couplings to ordinary matter are much suppressed relative to gravitational strength, and this is a major hindrance when building realistic models of light dilatons coupled to matter. We propose a new mechanism for evading such bounds if matter also couples to a light axion, that exploits nonlinear target-space curvature interactions to qualitatively change how the fields respond to a gravitating source. We find that dilaton-matter couplings that would be excluded in the absence of an axion can become acceptable given an additional small axion-matter coupling, and this is possible because the axion-dilaton interactions end up converting the would-be dilaton profile into an axion profile. The trajectories of matter test bodies are then controlled by the much weaker axion-matter couplings and can easily be small enough to escape detection. We call this mechanism Axion Homeopathy because the evasion of the dilaton-coupling bounds persists for extremely small axion couplings provided only that they are nonzero. We explore the mechanism using axio-dilaton equations that are SL(2,R) invariant (as often appear in string compactifications), since for these the general solutions exterior to a spherically symmetric source can be found analytically. We use this solution to compute the relevant PPN parameters, $\u03b2$ and $\u03b3$, and verify that their difference from unity can be much smaller than would have been true in the absence of axion-matter couplings and so can therefore evade the experimental bounds.",
+    "pdf_url": "https://arxiv.org/pdf/2110.10352v2",
+    "published": "2021-10-20"
+  },
+  "0911.4514v1": {
+    "title": "Quasi-Quantum Model of Potentization",
+    "authors": [
+      "Marcin Molski"
+    ],
+    "summary": "  Analytical time-dependent functions describing the change of the concentration of the solvent S(t) and the homeopathic active substance A(t) during the decimal and centesimal dilution are derived. The function S(t) is a special case of the West-Brown-Enquist curve describing the ontogenic growth, hence the increase in concentration of the solvent during potentization resembles the growth of biological systems. It is proven that the macroscopic S(t) function is the ground state solution of the microscopic non-local Horodecki-Feinberg equation for the time-dependent Hulthen potential at the critical screening. In consequence the potentization belongs to the class of quasi-quantum phenomena playing an important role both in the biological systems and homeopathy. A comparison of the model proposed with recently performed experiment on delayed luminescence of the homeopathic remedy will be also made.",
+    "pdf_url": "https://arxiv.org/pdf/0911.4514v1",
+    "published": "2009-11-23"
+  }
+}

@@ -1,0 +1,30 @@
+[project]
+name = "mcpprojects"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "arxiv>=4.0.0",
+    "backports-statistics==0.1.0",
+    "beautifulsoup4==4.14.3",
+    "brotli==1.2.0",
+    "brotlicffi==1.2.0.1",
+    "chardet==7.4.3",
+    "cryptography==48.0.0",
+    "cython==3.2.4",
+    "fastapi>=0.136.3",
+    "google-genai>=2.6.0",
+    "google-generativeai>=0.8.0",
+    "h2==4.3.0",
+    "html5lib==1.1",
+    "js==1.0",
+    "lxml-html-clean==0.4.5",
+    "mcp[cli]>=1.27.1",
+    "nest-asyncio>=1.6.0",
+    "pyopenssl==26.2.0",
+    "python-dotenv==1.2.2",
+    "simplejson==4.1.1",
+    "typing-extensions==4.15.0",
+    "uvicorn>=0.48.0",
+]

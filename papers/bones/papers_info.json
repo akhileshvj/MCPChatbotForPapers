@@ -1,0 +1,114 @@
+{
+  "2106.13927v4": {
+    "title": "Investigation of Bare-bones Algorithms from Quantum Perspective: A Quantum Dynamical Global Optimizer",
+    "authors": [
+      "Peng Wang",
+      "Gang Xin",
+      "Fang Wang"
+    ],
+    "summary": "Recent decades, the emergence of numerous novel algorithms makes it a gimmick to propose an intelligent optimization system based on metaphor, and hinders researchers from exploring the essence of search behavior in algorithms. However, it is difficult to directly discuss the search behavior of an intelligent optimization algorithm, since there are so many kinds of intelligent schemes. To address this problem, an intelligent optimization system is regarded as a simulated physical optimization system in this paper. The dynamic search behavior of such a simplified physical optimization system are investigated with quantum theory. To achieve this goal, the Schroedinger equation is employed as the dynamics equation of the optimization algorithm, which is used to describe dynamic search behaviours in the evolution process with quantum theory. Moreover, to explore the basic behaviour of the optimization system, the optimization problem is assumed to be decomposed and approximated. Correspondingly, the basic search behaviour is derived, which constitutes the basic iterative process of a simple optimization system. The basic iterative process is compared with some classical bare-bones schemes to verify the similarity of search behavior under different metaphors. The search strategies of these bare bones algorithms are analyzed through experiments.",
+    "pdf_url": "https://arxiv.org/pdf/2106.13927v4",
+    "published": "2021-06-26"
+  },
+  "1406.4781v1": {
+    "title": "Predictive Modelling of Bone Age through Classification and Regression of Bone Shapes",
+    "authors": [
+      "Anthony Bagnall",
+      "Luke Davis"
+    ],
+    "summary": "Bone age assessment is a task performed daily in hospitals worldwide. This involves a clinician estimating the age of a patient from a radiograph of the non-dominant hand.\n  Our approach to automated bone age assessment is to modularise the algorithm into the following three stages: segment and verify hand outline; segment and verify bones; use the bone outlines to construct models of age. In this paper we address the final question: given outlines of bones, can we learn how to predict the bone age of the patient? We examine two alternative approaches. Firstly, we attempt to train classifiers on individual bones to predict the bone stage categories commonly used in bone ageing. Secondly, we construct regression models to directly predict patient age.\n  We demonstrate that models built on summary features of the bone outline perform better than those built using the one dimensional representation of the outline, and also do at least as well as other automated systems. We show that models constructed on just three bones are as accurate at predicting age as expert human assessors using the standard technique. We also demonstrate the utility of the model by quantifying the importance of ethnicity and sex on age development. Our conclusion is that the feature based system of separating the image processing from the age modelling is the best approach for automated bone ageing, since it offers flexibility and transparency and produces accurate estimates.",
+    "pdf_url": "https://arxiv.org/pdf/1406.4781v1",
+    "published": "2014-06-18"
+  },
+  "2510.05933v1": {
+    "title": "Magnetic Fields in the Bones of the Milky Way",
+    "authors": [
+      "Ian W. Stephens",
+      "Simon Coude",
+      "Philip C. Myers",
+      "Catherine Zucker",
+      "James M. Jackson",
+      "B-G Andersson",
+      "Rowan Smith",
+      "Archana Soam",
+      "Patricio Sanhueza",
+      "Taylor Hogge",
+      "Howard A. Smith",
+      "Giles Novak",
+      "Sarah Sadavoy",
+      "Thushara Pillai",
+      "Zhi-Yun Li",
+      "Leslie W. Looney",
+      "Koji Sugitani",
+      "Andres E. Guzman",
+      "Alyssa Goodman",
+      "Takayoshi Kusune",
+      "Miaomiao Zhang",
+      "Nicole Karnath",
+      "Jessy Marin"
+    ],
+    "summary": "Stars primarily form in galactic spiral arms within dense, filamentary molecular clouds. The largest and most elongated of these molecular clouds are referred to as ``bones,\" which are massive, velocity-coherent filaments (lengths ~20 to >100 pc, widths ~1-2 pc) that run approximately parallel and in close proximity to the Galactic plane. While these bones have been generally well characterized, the importance and structure of their magnetic fields (B-fields) remain largely unconstrained. Through the SOFIA Legacy program FIELDMAPS, we mapped the B-fields of 10 bones in the Milky Way. We found that their B-fields are varied, with no single preferred alignment along the entire spine of the bones. At higher column densities, the spines of the bones are more likely to align perpendicularly to the B-fields, although this is not ubiquitous, and the alignment shows no strong correlation with the locations of identified young stellar objects. We estimated the B-field strengths across the bones and found them to be ~30-150 $\u03bc$G at pc scales. Despite the generally low virial parameters, the B-fields are strong compared to the local gravity, suggesting that B-fields play a significant role in resisting global collapse. Moreover, the B-fields may slow and guide gas flow during dissipation. Recent star formation within the bones may be due to high-density pockets at smaller scales, which could have formed before or simultaneously with the bones.",
+    "pdf_url": "https://arxiv.org/pdf/2510.05933v1",
+    "published": "2025-10-07"
+  },
+  "2308.12603v1": {
+    "title": "Parametric Investigation on Different Bone Densities to avoid Thermal Necrosis during Bone Drilling Process",
+    "authors": [
+      "Md Ashequl Islam",
+      "Nur Saifullah Kamarrudin",
+      "M. F. F. Suhaimi",
+      "Ruslizam Daud",
+      "Ishak Ibrahim",
+      "Fauziah Mat"
+    ],
+    "summary": "Bone drilling is a universal surgical procedure commonly used for internal fracture fixation, implant placement, or reconstructive surgery in orthopedics and dentistry. The increased temperature during such treatment increases the risk of thermal penetration of the bone, which may delay healing or compromise the fixation's integrity. Thus, avoiding penetration during bone drilling is critical to ensuring the implant's stability, which needs surgical drills with an optimized design. Bovine femur and mandible bones are chosen as the work material since human bones are not available and are the closest animal bone to human bone in terms of properties. In the present study, the Taguchi fractional factorial approach was used to determine the best design of surgical drills by comparing the drilling properties (i.e., signal-to-noise ratio and temperature rise). The control factors (spindle speed, drill bit diameter, drill site depth, and their levels) were arranged in an L9 orthogonal array. Drilling experiments were done using nine experimental drills with three repetitions. The findings of this study indicate that the ideal values of the surgical drill's three parameters combination (S1D1Di2) and their percentage contribution depend on the parameters' drilling levels. However, the result shows that the spindle speed has the highest temperature effect among other parameters in both (femur and mandible) bones.",
+    "pdf_url": "https://arxiv.org/pdf/2308.12603v1",
+    "published": "2023-08-24"
+  },
+  "1311.4528v2": {
+    "title": "MARS spectral molecular imaging of lamb tissue: data collection and image analysis",
+    "authors": [
+      "R Aamir",
+      "A Chernoglazov",
+      "C J Bateman",
+      "A P H Butler",
+      "P H Butler",
+      "N G Anderson",
+      "S T Bell",
+      "R K Panta",
+      "J L Healy",
+      "J L Mohr",
+      "K Rajendran",
+      "M F Walsh",
+      "N de Ruiter",
+      "S P Gieseg",
+      "T Woodfield",
+      "P F Renaud",
+      "L Brooke",
+      "S Abdul-Majid",
+      "M Clyne",
+      "R Glendenning",
+      "P J Bones",
+      "M Billinghurst",
+      "C Bartneck",
+      "H Mandalika",
+      "R Grasset",
+      "N Schleich",
+      "N Scott",
+      "S J Nik",
+      "A Opie",
+      "T Janmale",
+      "D N Tang",
+      "D Kim",
+      "R M Doesburg",
+      "R Zainon",
+      "J P Ronaldson",
+      "N J Cook",
+      "D J Smithies",
+      "K Hodge"
+    ],
+    "summary": "Spectral molecular imaging is a new imaging technique able to discriminate and quantify different components of tissue simultaneously at high spatial and high energy resolution. Our MARS scanner is an x-ray based small animal CT system designed to be used in the diagnostic energy range (20 to 140 keV). In this paper, we demonstrate the use of the MARS scanner, equipped with the Medipix3RX spectroscopic photon-processing detector, to discriminate fat, calcium, and water in tissue. We present data collected from a sample of lamb meat including bone as an illustrative example of human tissue imaging. The data is analyzed using our 3D Algebraic Reconstruction Algorithm (MARS-ART) and by material decomposition based on a constrained linear least squares algorithm. The results presented here clearly show the quantification of lipid-like, water-like and bone-like components of tissue. However, it is also clear to us that better algorithms could extract more information of clinical interest from our data. Because we are one of the first to present data from multi-energy photon-processing small animal CT systems, we make the raw, partial and fully processed data available with the intention that others can analyze it using their familiar routines. The raw, partially processed and fully processed data of lamb tissue along with the phantom calibration data can be found at [http://hdl.handle.net/10092/8531].",
+    "pdf_url": "https://arxiv.org/pdf/1311.4528v2",
+    "published": "2013-11-18"
+  }
+}
